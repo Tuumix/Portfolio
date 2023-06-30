@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Terminal from '../../components/Terminal';
-import { Avatar, Body, IntroContainer, MainContainer } from './styles';
+import { Avatar, Body, HeaderContainer, IntroContainer, Item, MainContainer, Navigation } from './styles';
+import Footer from '../../components/Footer';
 
 function Home() {
     const services = useRef(null);
@@ -8,7 +9,6 @@ function Home() {
     const contact = useRef(null);
 
     const scrollToSection = (elementRef: any) => {
-        console.log(elementRef, 'deldeldedle')
         window.scrollTo({
             top: elementRef.current.offsetTop,
             behavior: "smooth",
@@ -17,26 +17,18 @@ function Home() {
 
     const renderHeader = () => {
         return (
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly' }}>
+            <HeaderContainer>
                 <h1>{'{takano.dev}'}</h1>
-                <ul style={{ display: 'flex' }}>
-                    <li style={{ cursor: 'pointer', paddingRight: '10px', color: '#bd93f9' }} className='link' onClick={() => scrollToSection(services)}>
+                <Navigation>
+                    <Item onClick={() => scrollToSection(services)}>
                         Bio
-                    </li>
-                    <li style={{ cursor: 'pointer', paddingRight: '10px', color: '#bd93f9' }}>
+                    </Item>
+                    <Item>
                         Skills
-                    </li>
-                </ul>
+                    </Item>
+                </Navigation>
                 <h1>Icon2</h1>
-            </div>
-        )
-    }
-
-    const renderFooter = () => {
-        return (
-            <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', color: '#bd93f9', padding: '20px' }}>
-                <p>Developed by: Wellington Takano</p>
-            </div>
+            </HeaderContainer>
         )
     }
 
@@ -53,8 +45,8 @@ function Home() {
                     <Avatar />
                 </IntroContainer>
                 <Terminal refProp={services} />
+                <Footer />
             </MainContainer>
-            {renderFooter()}
         </Body>
     )
 }

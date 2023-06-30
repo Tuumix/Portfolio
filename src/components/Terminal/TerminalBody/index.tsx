@@ -13,7 +13,7 @@ function TerminalBody() {
 
     const renderCommands = () => {
         return (terminalInfo.map((item, key) => (
-            <>
+            <div key={key}>
                 <TerminalRaw>
                     <p>~{item.user}:</p>
                     <InputCommand>git</InputCommand>
@@ -22,7 +22,7 @@ function TerminalBody() {
                 {
                     Array.isArray(item.output) ? renderLinks(item.output) : <Output>{item.output}</Output>
                 }
-            </>
+            </div>
         )))
     }
 
@@ -47,7 +47,6 @@ function TerminalBody() {
             <CommandContainer >
                 {renderCommands()}
             </CommandContainer>
-            {/* <TerminalStatement> </TerminalStatement> */}
         </Container>
     )
 }

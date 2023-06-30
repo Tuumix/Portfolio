@@ -1,5 +1,22 @@
 import styled from 'styled-components';
 import avatar from '../../assets/images/avatar.jpg';
+
+
+export const HeaderContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+`
+
+export const Navigation = styled.ul`
+    display: flex;
+`
+
+export const Item = styled.li`
+    cursor: pointer;
+    padding-right: 10px;
+`
+
 export const Body = styled.div`
     background-color: #ece7e1;
     height: 100vh;
