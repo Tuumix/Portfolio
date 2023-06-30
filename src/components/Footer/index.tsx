@@ -1,11 +1,10 @@
 import React from 'react';
-import { FooterContainer } from './styles';
-
+import { FooterContainer, Title } from './styles';
 
 function Footer() {
     return (
         <FooterContainer>
-            <p>Developed by: Wellington Takano</p>
+            <Title>Developed by: Wellington Takano</Title>
         </FooterContainer>
     )
 }

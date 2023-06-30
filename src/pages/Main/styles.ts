@@ -19,14 +19,12 @@ export const Item = styled.li`
 
 export const Body = styled.div`
     background-color: #ece7e1;
-    height: 100vh;
 `
 
 export const MainContainer = styled.div`
     display: flex;
     align-items: center;
     margin-top: 100px;
-    justify-content: center;
     flex-direction: column;
 `
 
@@ -38,6 +36,16 @@ export const IntroContainer = styled.div`
     font-size: 30px;
 `
 
+export const Introduction = styled.div`
+    flex-direction: column;
+`
+
+export const SocialMedia = styled.div`
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+`
+
 export const Avatar = styled.div`
   background-image: url(${avatar});
   width: 300px;
@@ -46,3 +54,16 @@ export const Avatar = styled.div`
   background-size: cover;
   background-position: center center;
 `;
+
+export const BioContainer = styled.div`
+    flex-direction: column;
+    margin-top: 100px;
+    width: 1000px;
+    h1 {
+        font-size: 60px;
+    }
+    span {
+        font-size: 30px;
+        text-align: justify;
+    }
+`
