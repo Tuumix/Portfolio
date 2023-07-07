@@ -28,7 +28,7 @@ function Home() {
                         Skills
                     </Item>
                 </Navigation>
-                <h1>Icon2</h1>
+                <h1>Not implmented yet</h1>
             </HeaderContainer>
         )
     }
@@ -38,7 +38,7 @@ function Home() {
             <BioContainer ref={bio}>
                 <h1>Bio</h1>
                 <span>
-                    I hold a Bachelor's degree in Computer Science from the University of Western São Paulo and currently work as a Front-end developer at Accenture in Brazil. In my role, I work primarily with Angular and am responsible for developing new features, fixing bugs, integrating with the back-end, and managing version control using Gitlab and Azure DevOps. I also work with Jenkins to build and deploy to environment.
+                    Brazilian Full Stack Engineer, Currently I'm working at Accenture with Angular and Spring Boot. Since I was a kid I loved technology, especially computer and video games which is why I decided to become a Software Engineer.
                 </span>
             </BioContainer>
         )
@@ -52,13 +52,15 @@ function Home() {
                     <Introduction>
                         <div style={{ flexDirection: 'column' }}>
                             <h1>Hi,</h1>
-                            <h1>I'm Wellington</h1>
-                            <h1>Full Stack Engineer</h1>
+                            <h1>I'm Wellington,</h1>
+                            <h1>Full Stack Engineer.</h1>
                         </div>
                         <SocialMedia>
                             <SocialIcon url="https://www.linkedin.com/in/wellington-takano/"/> 
                             <SocialIcon url="https://github.com/Tuumix"/>
-                            <SocialIcon url="wellz-tkn@hotmail.com"/>
+                            <a href='mailto: wellz-tkn@hotmail.com'>
+                                <SocialIcon network="email"/>
+                            </a>
                             <SocialIcon url="https://www.facebook.com/wellz.tkn"/>
                         </SocialMedia>
                     </Introduction>
