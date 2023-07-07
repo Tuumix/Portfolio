@@ -58,9 +58,7 @@ function Home() {
                         <SocialMedia>
                             <SocialIcon url="https://www.linkedin.com/in/wellington-takano/"/> 
                             <SocialIcon url="https://github.com/Tuumix"/>
-                            <a href='mailto: wellz-tkn@hotmail.com'>
-                                <SocialIcon network="email"/>
-                            </a>
+                            <SocialIcon url='mailto: wellz-tkn@hotmail.com' network="email"/>
                             <SocialIcon url="https://www.facebook.com/wellz.tkn"/>
                         </SocialMedia>
                     </Introduction>
