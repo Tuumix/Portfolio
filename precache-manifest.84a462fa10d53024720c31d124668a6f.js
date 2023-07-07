@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b42406dc1df547fb4540",
+    "revision": "05894fac9d34a26dd47d",
     "url": "/takanodev/static/css/main.22769399.chunk.css"
   },
   {
-    "revision": "b42406dc1df547fb4540",
-    "url": "/takanodev/static/js/main.b42406dc.chunk.js"
+    "revision": "05894fac9d34a26dd47d",
+    "url": "/takanodev/static/js/main.05894fac.chunk.js"
   },
   {
     "revision": "23e5026d3c124a934bc7",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/takanodev/static/media/avatar.72697c67.jpg"
   },
   {
-    "revision": "bcfa4586356f1e9cc10ce7b7c8168b58",
+    "revision": "2b9e1329e6df71209e8af95473417c4a",
     "url": "/takanodev/index.html"
   }
 ];
